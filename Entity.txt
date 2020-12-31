@@ -1,0 +1,156 @@
+
+Online Application Title: E Placement Management System
+Team:			Shubham Chaudhari
+			Hetal Khachane
+			Pratik Thakur
+			Dnyandeep Yadav
+			Priya Malpani
+
+SRS Document:
+
+ 
+ER listing:
+
+
+
+Application Architecture:
+
+	Application = 
+			Logic 	+  data
+
+	Logic =(UI Logic  + Business Logic + DataAccess Logic) 
+	Data  =( structured data , Non Structured data)
+
+
+Online Application:
+
+	    Web based Application
+		    deployed on web and accessed by users from anywhere
+
+		     E Placement Management System------Web portal-- used remotely by endusers,
+							                   Students,
+								           
+
+Logic:
+     UI Logic:
+
+		 Web Pages +  HTML controls + Web Components (Angular)
+		 Navigation : (UI Routing) HTML Links, Routing mechansim
+		 Data Binding : DOM  + JSP tags (JSTL) + {{}} ngModel,
+		 
+		 Event Binding : 				action handlers
+					
+				 
+			HTTP Request:	GET:----------------Doget
+					POST:---------------Dopost
+					PUT:
+					DELETE:
+
+              Client Side UI----------------HTML, CSS, javaScript, bootstrap
+					        UI (Client Side UI Framework)
+						Angular, React, Vue,..........
+
+	Web Logic: ( Server Side processing)
+
+		Server UI---------------- JSP, servelet,  ( classical java web technology)
+				 spring MVC  ( to take advantage of MVC design Pattern using ready made frmwrk)
+						 Model, View, Controller
+						 Router
+						 (SOA  layer)
+						Spring Boot api
+						CRUD REST API
+						ORM Technique:Hibernate  ( ORM)
+						       ,JPA
+				         	JDBC  ( database Connectivity)
+		State management
+				
+		 	Client Side state management
+				cookies, querystring, form collection, hidden variables
+				 local storage, session storage, Web sql, 
+
+			Server Side state management
+				session, Cache,
+				database
+	Business Logic:
+		
+	
+		Java console application will be used to test your business Logic
+
+		Core Java:
+
+		will contain
+		 1.business query processing
+		 2.business operation managment
+		 3.Business data manipulation
+		
+	   from Online shopping point of view
+
+		Modules:
+
+		1.ProductCatalog
+				: Product Inventory
+					create, insert, delete,
+				: Produdct Category 
+					 get all
+					 get by category
+					
+		2. Shopping Cart:	
+				Adding to cart
+				Removing from cart
+				getting all elemnt from cart
+				 ,,,etc.
+		3.OrderProcessing:
+		
+		4.BI:
+		
+		5.CRM:
+		
+		6.Payment Processing:
+
+
+
+Data :
+		 Structured Data
+			 RDBMS
+				fields
+				tables
+				contstraints
+
+				Add some dummy records in your newly created database
+
+				write  reusable SQL queries against those database tables to check bussiness Queries
+				Test those SQL queries on existing dummy database you built
+
+			List of tables
+				HOD
+					Fields:
+					   Id, password, firstName, lastName, 
+					primary Key: Id
+				TPO
+					Fields:
+					   Id,password,collegeName,collegeCode, firstName, lastName, email, contactNumber,
+					primary Key:
+				Student
+					Fields:
+					   Id, password,fiirstName, lastName, birthDate, email, contactNumber, collegeName, collegeCode
+					primary Key: Id
+				Companies
+					Fields:
+					   Id, companyName, email, contactNumber,address
+					primary Key: Id
+				Alumni's
+					Fields:
+					   StudentName, companyName, companyName, CTC, year,
+					
+
+				Recruitment:
+					Fields:
+					   companyName,studentName
+	
+					
+
+			Create .sql file
+			  ddl.sql--->file will contain   DDL commands for Table creation
+			  dml.sql--->file will contain   insert commands for filling dummy data to tables which we have created
+			  bqyery.sql-->file will conatin   SQL queries mapped for business queries
+		
